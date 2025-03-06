@@ -15,7 +15,7 @@ image_folder = 'calibrate_images_8MP_6_4_24'
 images = [cv2.imread(os.path.join(image_folder, img)) for img in os.listdir(image_folder) if img.endswith(".png")] # change the format if needed!
 
 # cheess board pattern and size
-pattern_size = (18, 13)  # no. of intersections in x, y directions
+pattern_size = (13, 9)  # no. of intersections in x, y directions
 # square_size = 25.0  # in mm (for scaling)
 
 # the points of the object and image
