@@ -9,10 +9,10 @@ import pandas as pd
 
 # make the folder to save images
 # output_folder = 'test_images_2DCV_8MP_6_17_24'
-output_folder = "Michael"
+output_folder = "SLL_ML/test_images_3_6_25"
 os.makedirs(output_folder, exist_ok=True)
-cameraMatrix = pd.read_csv('config/calibration_matrix.csv').values
-distCoeffs = pd.read_csv('config/distortion_coeff.csv').values
+cameraMatrix = pd.read_csv('/home/kasra/Kasra/SLL/SLL_ML/config/calibration_matrix.csv').values
+distCoeffs = pd.read_csv('/home/kasra/Kasra/SLL/SLL_ML/config/distortion_coeff.csv').values
 
 
 cap = cv2.VideoCapture(0) # the number of output for the camera

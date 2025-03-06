@@ -10,9 +10,9 @@ import os
 
 # make the folder to save images
 #output_folder = "captured_images_4MP"
-output_folder = "calibrate_images_8MP_6_4_24"
+output_folder = "SLL_ML/calibrate_images_8MP_3_6_25"
 # output_folder = "2DCV_images_8MP_6_17_24"
-output_folder = "Michael"
+# output_folder = "Michael"
 
 os.makedirs(output_folder, exist_ok=True)
 
@@ -44,7 +44,7 @@ while True:
 
     # save the image with s and quit the program with q
     if key == ord('s'):
-        img_name = "{}\image_{}.png".format(output_folder,img_counter)
+        img_name = "{}/image_{}.png".format(output_folder,img_counter) #==== change it to / instead of \
         cv2.imwrite(img_name, frame)
         print("Image {} saved as {}".format(img_counter, img_name))
         img_counter += 1
