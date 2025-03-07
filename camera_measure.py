@@ -5,8 +5,8 @@ import pandas as pd
 from functions import show_lines, get_lines, measurements, get_ppm
 from time import time, sleep 
 
-cameraMatrix = pd.read_csv('config/calibration_matrix.csv').values
-distCoeffs = pd.read_csv('config/distortion_coeff.csv').values
+cameraMatrix = pd.read_csv('/home/kasra/Kasra/SLL/SLL_ML/config/calibration_matrix.csv').values
+distCoeffs = pd.read_csv('/home/kasra/Kasra/SLL/SLL_ML/config/distortion_coeff.csv').values
 # ppm = pd.read_csv('config/ppm.csv').values[0][0]
 # Angle in degrees
 theta = 90 - 38

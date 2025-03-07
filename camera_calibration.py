@@ -11,7 +11,7 @@ import os
 import pandas as pd
 
 # load the saved images from the other code for calibration
-image_folder = "calibrate_images_8MP_3_7_25"
+image_folder = "/home/kasra/Kasra/SLL/SLL_ML/calibrate_images_8MP_3_7_25"
 images = [cv2.imread(os.path.join(image_folder, img)) for img in os.listdir(image_folder) if img.endswith(".png")] # change the format if needed!
 
 # cheess board pattern and size

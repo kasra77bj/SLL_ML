@@ -21,10 +21,12 @@ By default, OpenCV has an image resolution of 640x480 so we must set the frame w
 '''
 cap = cv2.VideoCapture(0) # the number of output for the camera
 
-# Set capture properties to 8MP resolution
+# === Set capture properties to 8MP resolution ===
 cap.set(cv2.CAP_PROP_FRAME_WIDTH, 3264)
 cap.set(cv2.CAP_PROP_FRAME_HEIGHT, 2448)
 
+
+# === Set capture properties to 4MP resolution ===
 # cap.set(cv2.CAP_PROP_FRAME_WIDTH, 2688)
 # cap.set(cv2.CAP_PROP_FRAME_HEIGHT, 1520)
 
