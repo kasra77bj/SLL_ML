@@ -36,12 +36,16 @@ while True:
     ret, frame = cap.read()
     frame = cv2.undistort(frame,cameraMatrix, distCoeffs)
     frame = frame[0:2448, 0:2500]
-    cv2.line(frame, (1560, 1), (1560, 2448), (255, 0, 0), 5)
-    cv2.line(frame, (1050, 1), (1050, 2448), (255, 255, 0), 5)
-    cv2.line(frame, (1800, 1), (1800, 2448), (255, 0, 0), 5)
-    cv2.line(frame, (2200, 1), (2200, 2448), (255, 0, 0), 5)
-    cv2.line(frame, (1, 1630), (3264, 1630), (255, 0, 255), 5)
-    cv2.line(frame, (1, 400), (3264, 400), (255, 0, 255), 5)
+
+    # y lines
+    cv2.line(frame, (1560, 1), (1560, 2448), (255, 255, 0), 5) # line 2 - layer
+    cv2.line(frame, (260, 1), (260, 2448), (255, 255, 0), 5) #line 1 - layer
+    cv2.line(frame, (850, 1), (850, 2448), (255, 0, 0), 5) # line 1 - platform
+    cv2.line(frame, (2000, 1), (2000, 2448), (255, 0, 0), 5) # line 2 - platform
+
+    # x line
+    cv2.line(frame, (1, 2050), (3264, 2050), (255, 0, 255), 5)
+    cv2.line(frame, (1, 800), (3264, 800), (255, 0, 255), 5)
     # frame = frame[0:1788, 700:1788]
     # cv2.line(frame, (800, 1), (800, 2000), (255, 0, 0), 5)
     # diplay image
