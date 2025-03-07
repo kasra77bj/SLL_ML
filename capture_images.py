@@ -1,6 +1,6 @@
 """
-    First run this code to generate the photos. 
-    Use at least 20 images for the calibration!
+    First run this code to get 20 photos for calibration. 
+    Use at least 20 images!
     Capture the images from different angles and distances.
 """
 
