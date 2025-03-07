@@ -11,6 +11,11 @@ For the 50mm layer: 1 layer samples
     cv2.line(frame, (1, 800), (3264, 800), (255, 0, 255), 5)
 
 
+theta: 38.3
+
+
 
 For the 25 mm layer: 1 layer
 
+
+theta: 38.79

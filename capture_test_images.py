@@ -9,7 +9,7 @@ import pandas as pd
 
 # make the folder to save images
 # output_folder = 'test_images_2DCV_8MP_6_17_24'
-output_folder = "SLL_ML/50mm_1_layer_wet_3_7_25"
+output_folder = "SLL_ML/25mm_2_layer_wet_3_7_25"
 os.makedirs(output_folder, exist_ok=True)
 cameraMatrix = pd.read_csv('/home/kasra/Kasra/SLL/SLL_ML/config/calibration_matrix.csv').values
 distCoeffs = pd.read_csv('/home/kasra/Kasra/SLL/SLL_ML/config/distortion_coeff.csv').values
