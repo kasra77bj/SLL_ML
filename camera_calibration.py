@@ -1,8 +1,8 @@
 """
-    First run the other code to generate the pictures
+    First run the other code "capture_images.py" to generate the pictures
     and then use this code for the calibration.
 
-    !!!  Use at least 20 images for the calibration  !!!   
+    !!! ====  Use at least 20 images for the calibration ==== !!!   
 """
 
 import numpy as np
@@ -11,7 +11,7 @@ import os
 import pandas as pd
 
 # load the saved images from the other code for calibration
-image_folder = "calibrate_images_8MP_3_6_25"
+image_folder = "calibrate_images_8MP_3_7_25"
 images = [cv2.imread(os.path.join(image_folder, img)) for img in os.listdir(image_folder) if img.endswith(".png")] # change the format if needed!
 
 # cheess board pattern and size

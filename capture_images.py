@@ -10,7 +10,7 @@ import os
 
 # make the folder to save images
 #output_folder = "captured_images_4MP"
-output_folder = "SLL_ML/calibrate_images_8MP_3_6_25"
+output_folder = "SLL_ML/calibrate_images_8MP_3_7_25"
 # output_folder = "2DCV_images_8MP_6_17_24"
 # output_folder = "Michael"
 

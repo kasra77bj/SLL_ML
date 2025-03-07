@@ -12,8 +12,8 @@ import pandas as pd
 # make the folder to save images
 #output_folder = "captured_images_4MP"
 
-cameraMatrix = pd.read_csv('config/calibration_matrix.csv').values
-distCoeffs = pd.read_csv('config/distortion_coeff.csv').values
+cameraMatrix = pd.read_csv('/home/kasra/Kasra/SLL/SLL_ML/config/calibration_matrix.csv').values
+distCoeffs = pd.read_csv('/home/kasra/Kasra/SLL/SLL_ML/config/distortion_coeff.csv').values
 
 '''
 By default, OpenCV has an image resolution of 640x480 so we must set the frame width and height acocordingly
@@ -57,9 +57,6 @@ while True:
     if key == ord('q'):
         break
     
-
-
-
 
 cap.release()
 cv2.destroyAllWindows()
